@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Manga</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Manga.html.css">
+    </head>
+    <body>
+        <div id="notification" class="notification" style="display:none;">
+            <span>Se ha agregado al carrito</span>
+            <button id="go-to-cart">Ir al carrito</button>
+        </div>
+        <div class="navbar">
+            <div class="logo"><img src="IMG/Lgo pag web3.png" alt="logo" width="120"/></div>
+            <div class="menu">
+                <a href="PrimeraVista.html" class="nav-button">Inicio</a>
+                <a href="Productos.html" class="nav-button">Productos</a>
+                <a href="Carrito.html" class="nav-button">Carrito</a>
+                <div class="user-icon-container">
+                    <img src="IMG/cuenta.png" alt="Usuario" id="user-icon"
+                         style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
+                    <div id="user-modal" class="user-modal">
+                        <p id="user-id-text" style="margin: 0 0 8px 0; font-weight: bold;"></p>
+                        <a href="PerfilDeUsuario.html" class="go-to-profile">Ir al perfil de usuario</a>
+                        <button id="logout-btn">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block">
+            <h2>Shonen</h2>
+            <div class="carousel">
+                <div class="carousel-track">              
+                    <div class="item" data-title="Blue Lock" data-description="Tras una desastrosa derrota en el Mundial 2018, la selección de Japón lucha por recuperarse.
+                         ¿Pero qué le falta? Un delantero absoluto, que pueda guiarles hacia la victoria. La Asociación de Fútbol de Japón está empeñada en crear un delantero
+                         con hambre de gol y sed de victoria, que pueda ser el instrumento decisivo para dar la vuelta a un partido perdido… y para ello ha reunido a 300 de 
+                         los mejores y más brillantes jugadores juveniles de Japón, encerrándolos en un centro conocido como “Blue Lock”. ¿Quién se convertirá en el líder del equipo? 
+                         ¿Será capaz de superar a todos los que se interpongan en su camino?"data-id="shonen1"   data-price="$125">
+                        
+                        <img src="productosEG/manga/shonen 1.jpg" alt="shonen1">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Boruto" data-description="Boruto es una serie de anime que sigue la vida de Boruto Uzumaki,
+                         el hijo de Naruto, en un mundo donde la paz y la tecnología han reemplazado la guerra. La historia se centra en su lucha
+                         por encontrar su propio camino en la vida ninja, a pesar de ser considerado un prodigio. A medida que avanza, Boruto enfrenta
+                         desafíos como la falta de tiempo de su padre, el Hokage Naruto, y la búsqueda de su identidad. " data-id="shonen2"  data-price="$125">
+                        
+                        <img src="productosEG/manga/shonen2.jpg" alt="shonen2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Dragon Ball" data-description="Son Goku es un chico muy especial que, tras la muerte de su abuelo, 
+                         vive solo en el bosque. Posee una fuerza prodigiosa y parece bastante satisfecho con su vida al aire libre hasta que conoce 
+                         a Bulma, una niña pija que está buscando las Bolas de Dragón, siete esferas mágicas que, una vez reunidas, pueden conceder
+                         cualquier deseo. Casualmente, Goku posee una de ellas, la de cuatro estrellas, por lo que a Bulma le cuesta un poco convencerle 
+                         de que se una a ella en su búsqueda... ¡Así empieza el manga más popular de todos los tiempos!" data-id="shonen3"  
+                         data-price="$125">
+                        
+                        <img src="productosEG/manga/shonen 3.jpg" alt="shonen3">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Goodbye Eri" data-description="Goodbye Eri es una obra polimorfa que se reinventa a sí misma varias veces a lo largo de la historia.
+                         La línea entre lo que es real y lo que no lo es se difumina hasta el punto de que el lector quizá no esté muy seguro de lo que acaba de leer; y sin embargo,
+                         el poso que deja su final perdura. Por este motivo, para hacerle justicia en esta reseña, creo necesario comentar muchos aspectos de la historia que son spoilers y que,
+                         por tanto, pueden estropear la experiencia completa que supone su lectura." data-id="shonen4"  data-price="$125">
+                        
+                        <img src="productosEG/manga/shonen 4.jpg" alt="shonen4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Haikyu" data-description="La historia sigue la carrera de Shoyo Hinata, un chico que ama el voleibol y decide 
+                         conformar un equipo para competir en el interescolar. Pero en el último torneo de escuela media, su equipo recibe una auténtica paliza 
+                         del equipo de Tobio Kageyama, un prodigio de este deporte. Al entrar a preparatoria Hinata decide unirse a Karasuno y al equipo de voleibol 
+                         para así algún día vengarse de Kageyama pero, para su sorpresa, Kageyama también está en el equipo. Así, dos antiguos rivales forman un 
+                         equipo imbatible con el que buscan conseguir el campeonato nacional" data-id="shonen5"  data-price="$125">
+                        
+                        <img src="productosEG/manga/shonen 5.jpg" alt="shonen5">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>              
+                    <div class="item" data-title="Naruto" data-description="Naruto es un anime sobre ninjas del estilo shonen creado por el mangaka
+                         Masashi Kishimoto el cual nos llevará a seguir las aventuras de nuestro protagonista Naruto Uzumaki,
+                         un niño de 12 años sin padres el cual quiere cumplir su sueño de ser el mejor ninja de su aldea, Konoha." data-id="shonen6" 
+                         data-price="$125">
+                        
+                        <img src="productosEG/manga/shonen 6.jpg" alt="shonen6">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                                 
+                    <div class="item" data-title="Dead Note" data-description="La historia se centra en Light Yagami, un estudiante de escuela secundaria. 
+                         Un día, encuentra un cuaderno con poderes sobrenaturales llamado «Death Note», con el cual es capaz de matar personas si se escriben
+                         los nombres de estas en él, a la vez que si el portador visualiza mentalmente la cara de quien quiere asesinar.Light, percatándose 
+                         del potencial del cuaderno, intenta eliminar a todos los criminales y crear un mundo donde no exista la maldad. Sin embargo, 
+                         un misterioso detective privado que se hace llamar L, famoso mundialmente por resolver grandes casos en el pasado, tratará de 
+                         frustrar sus planes." data-id="shonen7"  data-price="$125">
+                        
+                        <img src="productosEG/manga/shonen 7.jpg" alt="shonen7">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Diner" data-description="Soy Kikuchiyo. Soy un bulldog. Mi compañero me salvó la vida y ahora paso mis
+                         días en la cantina con cierta satisfacción. Un día, sin embargo, veo a un hombre con mi viejo enemigo, Boyle… Solía ser un luchador
+                         de perros, viviendo mi vida para nada. Estaba dispuesto a morir en la lucha con Boyle, a quien se temía como el “Dios de la Muerte”, 
+                         pero un hombre me dio una comida que me dio ganas de vivir. Al final del combate, estuvo tan cerca de derrotarlo que tuvo que ir a ……. 
+                         Comienza la historia del encuentro entre Bombero y Kikuchiyo, un hombre y un animal…" data-id="shonen8" data-price="$55">
+                        
+                        <img src="productosEG/manga/shonen 8.jpg" alt="shonen8">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="My Hero Academia" data-description="En un mundo en el que la mayor parte de la población nace con un Don, 
+                         una habilidad extraordinaria diferente en cada cual, no tardaron en aparecer tanto villanos como héroes dispuestos a detenerlos.
+                         Con el tiempo los héroes pasaron a ser funcionarios del gobierno, estando regulados y viviendo de su trabajo, además de convertirse 
+                         en objeto de admiración de muchos. Ahora, ser héroe es el sueño de la gran mayoría de niños, que esperan desde muy pequeños a que
+                         su Don se manifieste para comenzar a entrenar y soñar con convertirse en los héroes número uno." data-id="shonen9" data-price="$125">
+                        
+                        <img src="productosEG/manga/shonen 9.jpg " alt="shonen9">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    
+                    <div class="item" data-title="Jujutsu Kaisen 0" data-description=" Yuta Okkotsu es un chico de instituto bastante nervioso con un grave problema:
+                         Su amiga Rika se ha convertido en un Curse y no le deja a solas. Ya que Rika no es un Curse ordinario, capta la atención de Satoru Gojo, 
+                         un profesor del Instituto Jujutsu, donde los exorcistas aprenden a combatir a los Curse. Gojo convence a Yuta para enrolarse en al academia... 
+                         ¿Podrá aprender Yuta a controlar al Curse que le atormenta?." data-id="shonen10"  data-price="$125">
+                        
+                        <img src="productosEG/manga/shonen 10.jpg" alt="shonen10">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div> 
+                </div>
+            </div>
+
+            <h2>Isekai</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="item" data-title="Hunting in Another Word" data-description="Después de ser asesinado por un oso, el cazador profesional
+                         Shin Nakajima ha despertado en otro mundo. Armado solo con su escopeta, las cosas se complican cuando los lobos atacan. Parece 
+                         que su segunda oportunidad en la vida es de corta duración hasta que la hermosa elfa Saran viene a su rescate. Una cazadora hábil
+                         por derecho propio, ella y Shin se conectan instantáneamente. Quizás ella pueda ayudarlo a encontrar su camino en esta extraña
+                         nueva tierra."data-id="isekai1" data-price="$55">
+                        
+                        <img src="productosEG/manga/isekai 1.jpg" alt="isekai1">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Lout of Counts Family" data-description="Comenzando con el despertar de nuestro personaje principal, 
+                         Kim Rok Soo, en un mundo diferente, se encuentra poseyendo el cuerpo de un villano menor dentro de la novela El nacimiento de 
+                         un héroe: Cale Henituse. Al intentar evitar ser golpeado como en la novela original, sus acciones conducen directamente a que
+                         la trama original se desvíe y se ve arrastrado al centro de muchos conflictos que ocurren en el mundo." data-id="isekai2"  
+                         data-price="$55">
+                        
+                        <img src="productosEG/manga/isekai 2.jpg" alt="isekai2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Soy una Araña" data-description="El mundo donde el Héroe y el Rey Demonio continúan oponiéndose el uno 
+                         al otro. La gran magia del Héroe y el Rey Demonio cruzan mundos y explotan en el aula de una cierta escuela secundaria.
+                         Los estudiantes que murieron en la explosión reencarnaran en un mundo diferente. La protagonista, que tiene la reputación 
+                         más baja de la clase, reencarnó en una araña. Sin embargo, ella se adaptó rápidamente a la condición presente con gran fuerza 
+                         de voluntad. Esta es una historia de una araña intentando todo lo que puede para sobrevivir." data-id="isekai3" data-price="$125">
+                        
+                        <img src="productosEG/manga/isekai 3.jpg" alt="isekai3">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Smile" data-description=" Manga de colección Smile edición especial definitiva" data-id="isekai4"  
+                         data-price="$95">
+                        <img src="productosEG/manga/isekai 4.jpg" alt="isekai4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="The Dead mage" data-description="Amamiya Hiroto tuvo una vida desafortunada. Su vida consistió en 
+                         desgracia tras desgracia, culminando en una desafortunada muerte al intentar salvar a una chica que apenas y conocía,
+                         en un incidente durante su viaje escolar en barco. Después de morir, Hiroto y el centenar de pasajeros muertos se encontraron
+                         con la propuesta de un dios de la reencarnación – entre ellos estaba la chica que intentó salvar pero al parecer fue en vano 
+                         ellos se reencarnaran en otro mundo." data-id="isekai5"  data-price="$95">
+                        
+                        <img src="productosEG/manga/isekai 5.jpg" alt="isekai5">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Horror</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="item" data-title="PSTD" data-description="La sinopsis de la serie de cómics PTSD de Guillaume Singelin gira en torno a un grupo
+                         de excombatientes que regresan de una guerra larga y brutal. Ahora, lejos del campo de batalla, sufren los efectos psicológicos del conflicto, 
+                         incluyendo el trastorno de estrés postraumático (TEPT). Abandonados y viviendo en la calle, se enfrentan a la violencia de las bandas urbanas
+                         que impiden que vuelvan a integrarse en la sociedad. A medida que la historia avanza, uno de los personajes, aún con su entrenamiento militar,
+                         decide luchar contra estos opresores, mostrando su determinación de obtener justicia. " data-id="horror1"  data-price="$125">
+                        
+                        <img src="productosEG/manga/horror.jpg" alt="horror1">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Berserk" data-description="La historia comienza con Guts, un espadachín solitario y de fuerza ridícula 
+                         que se enfrasca en batallas contra monstruos. Guts a simple vista nos puede parecer un tipo insensible y extremadamente violento,
+                         pues no es raro en él que sea cegado por la violencia y que tenga una actitud difícil de tratar. Este primer arco es una historia 
+                         simple cargada de acción y con mucha violencia explicita, por lo que podría parecer algo sin mucho sentido. 
+                         Pero eso es solo una fachada." data-id="horror2"  data-price="$111">
+                        
+                        <img src="productosEG/manga/horror2.jpg" alt="horror2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Shigahime" data-description="Osamu Hirota, un estudiante de instituto que lleva una vida ociosa, se adentra
+                         en una misteriosa mansión guiado por Sôichi Tachibana, un chaval de otro barrio. En el interior de la casa lo espera desnuda una chica 
+                         guapísima llamada Miwako Desde ese momento, su tediosa vida cambiará para siempre. Comienza Shigahime, una obra oscura de terror y suspense." 
+                         data-id="horror3"  data-price="$125">
+                        
+                        <img src="productosEG/manga/horror3.jpg" alt="horror3">                        
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Homunculus" data-description="Homunculus es una obra que trata el aspecto de los complejos y las personalidades 
+                         desde un punto de vista metafórico y muy visual. El autor nos trata de señalar que lo que vemos es lo que somos y que las apariencias 
+                         no siempre engañan, simplemente hay que saber mirar y entrar un poco en el «alma» de las otras personas. La obra transmite una atmósfera
+                         opresiva, desagradable y enfermiza" data-id="horror4"  data-price="$125">
+                        
+                        <img src="productosEG/manga/Horror4.jpg" alt="horror4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Betwixt" data-description="Betwixt: A Horror Manga Anthology es una antología de seis historias cortas de 
+                         terror de autores japoneses y estadounidenses. Explora el miedo universal a la zona entre lo conocido y lo desconocido, presentada 
+                         a través de personajes y situaciones que desafían la percepción de la realidad."data-id="horror5"  data-price="$115">
+                        
+                        <img src="productosEG/manga/horror5.jpg" alt="horror5">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Shoujo</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="item" data-title="Ao Haru Ride" data-description="Futaba Yoshioka quiere reiniciar su vida. En secundaria, las niñas le 
+                         excluían por su popularidad entre los chicos. El único muchacho que le gustaba, Kou Tanaka, se mudó antes de que ella pudiera 
+                         decirle lo que sentía. Ahora en preparatoria, está decidida a ser todo lo impropio de una dama para que sus nuevas amigas no 
+                         tengan celos de ella. Mientras vive su nueva vida, se reencuentra con Kou, solo que ahora usa el nombre de Kou Mabuchi y tiene
+                         una actitud fría. " data-id="shoujo1"  data-price="$55">
+                        
+                        <img src="productosEG/manga/maanga shoujo 1.jpg" alt="shoujo1">
+                        
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="A Sign of Afecction" data-description="Yuki Itose es una típica estudiante que lidia con las presiones 
+                         de la universidad. Un día tiene problemas en el tren cuando un compañero llamado Itsuomi Nagi le echa una mano. A medida que él 
+                         abre un mundo nuevo a ella, Yuki empieza a sentir algo por Itsuomi. Una historia de amor pura empieza a crecer." 
+                         data-id="shoujo2"  data-price="$75">
+                        
+                        <img src="productosEG/manga/mangaa shoujo2.jpg" alt="shoujo2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="My dress Up Darling" data-description="La sinopsis de My Dress-Up Darling sigue a Wakana Gojo, un chico 
+                         que se dedica a la creación de muñecas Hina tradicionales. Debido a un trauma social, Wakana evita interactuar con otros y se esconde
+                         detrás de sus pasiones. La trama se complica cuando Marin Kitagawa, una chica popular y atractiva, descubre su talento y lo contrata 
+                         para crear disfraces de cosplay. " data-id="shoujo3"  data-price="$125">
+                        
+                        <img src="productosEG/manga/manga shoujo3.jpg" alt="shoujo3">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Honey Lemon" data-description="Después de la secundaria, marcada por el acoso y los apodos, Uka Ishimori
+                         está emocionada por un nuevo comienzo en la preparatoria Hachimitsu. Kai Miura, un chico fresco y despreocupado, se sienta junto a
+                         ella en clase. Uka recuerda que conoció a Kai en la secundaria, y con una sola palabra, él la convenció de asistir a Hachimitsu. 
+                         Aunque es popular, Kai apoya a Uka en sus esfuerzos por integrarse con sus nuevos compañeros. " data-id="shoujo4"  data-price="$85">
+                        
+                        <img src="productosEG/manga/manga shoujo 4.jpg" alt="shoujo4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="My love story with yamada kun " data-description="Recientemente dejada por su novio, Akane está decidida 
+                         a dejar de jugar al juego MMORPG que jugaba junto con su novio, pero entonces conoce a Yamada en el mismo juego. Yamada es una especie
+                         de jugador legendario, pero que sólo piensa en el juego. A medida que los sentimientos hacia Yamada crecen en Akana, ¿podrá Yamada 
+                         centrarse sólo en el juego como siempre?" data-id="shoujo5"  data-price="$125">
+                        
+                        <img src="productosEG/manga/manga shoujo 5.jpg" alt="shoujo5">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Seinen</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="item" data-title="Hp Lovecraft" data-description="¿Por dónde empezar con Lovecraft? Uno echa un ojo al catálogo de Planeta 
+                         Cómic y siente vértigo. Además, leer a día de hoy al padre del terror cósmico puede resultar confuso. Su literatura ha sido tantas 
+                         veces reinterpretada, adaptada al cine, el cómic o incluso al videojuego que cuesta asimilar dónde reside el original y dónde, 
+                         simplemente, persigues una huella o reinvención." data-id="seinen1"  data-price="$125">
+                        
+                        <img src="productosEG/manga/seinen 1.jpg" alt="seinen1">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Leviatan" data-description="La trama de Leviatán se centra en un equipo de salvamento que descubre el diario
+                         desgastado de un joven llamado Kazuma en una nave espacial abandonada. Este diario es el hilo conductor de una historia de supervivencia,
+                         donde Kazuma y sus compañeros de clase se ven atrapados en la nave espacial tras una explosión no identificada cuando esta se encontraba
+                         de camino entre su colonia espacial y la tierra para una excursión de final de curso." data-id="seinen2"   data-price="$75">
+                        
+                        <img src="productosEG/manga/seinen 2.jpg" alt="seinen2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Grand blue Dreaming" data-description="Iori Kitahara se prepara para comenzar su vida universitaria en la
+                         península de Izu, hospedándose en una habitación arriba de la tienda de buceo Grand Blue de su tío. Sin embargo, se sorprende cuando 
+                         conoce al Club de Buceo local, un grupo lleno de hombres aficionados que pasan más tiempo bebiendo, divirtiéndose y desnudándose que
+                         buceando." data-id="seinen3"  data-price="$85">
+                        
+                        <img src="productosEG/manga/seinen3.jpg" alt="seinen3">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="17 años" data-description="Hiroki y Takeishi están siendo agredidos por unos pandilleros cuando el jefe de una
+                         banda les ayuda y pasan a formar parte de ella. A consecuencia, ambos se verán involucrados en el secuestro de una chica para violarla. 
+                         La hermana gemela de ésta inicia una búsqueda exhaustiva.¿Será capaz de encontrarla antes de que suceda lo irreparable?" 
+                         data-id="seinen4"  data-price="$125">
+                        
+                        <img src="productosEG/manga/seinen4.jpg" alt="seinen4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Nausicaa" data-description="La historia se sitúa en el futuro, 1000 años tras los Siete días de fuego, un suceso
+                         provocado por la excesiva industrialización del ser humano, y la contaminación que provocó. Este hecho destruyó por completo la civilización
+                         industrial un milenio después de que empezara a florecer." data-id="seinen5"  data-price="$125">
+                        
+                        <img src="productosEG/manga/seinen5.jpg" alt="seinen5">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>              
+                <img id="modal-image" src="" alt="Imagen del producto" class="modal-image">
+                <div class="modal-content-text">
+                    <h2 id="modal-title">Título del producto</h2>
+                    <p id="modal-description">Descripción del producto</p>
+                    <p id="modal-price">Precio</p>
+                    <button id="modal-add-to-cart" class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div id="notification" class="notification" style="display: none;">
+                <p>Producto añadido al carrito</p>
+                <button id="go-to-cart">Ir al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Manga.js"></script>
+</body>
+</html>

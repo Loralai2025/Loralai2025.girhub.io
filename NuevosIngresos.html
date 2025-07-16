@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Nuevos Ingresos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="IngresoStyle.html.css"> 
+    </head>
+    <body>
+        <div id="notification" class="notification" style="display:none;">
+            <span>Se ha agregado al carrito</span>
+            <button id="go-to-cart">Ir al carrito</button>
+        </div>
+        <div class="navbar">
+            <div class="logo"><img src="IMG/Lgo pag web3.png" alt="logo" width="120"/>
+            </div>               
+            <div class="menu">
+                <a href="PrimeraVista.html" class="nav-button">Inicio</a>
+                <a href="Productos.html" class="nav-button">Productos</a>
+                <a href="Carrito.html" class="nav-button">Carrito</a>
+                <div class="user-icon-container">
+                    <img src="IMG/cuenta.png" alt="Usuario" id="user-icon"
+                         style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
+                    <div id="user-modal" class="user-modal">
+                        <p id="user-id-text" style="margin: 0 0 8px 0; font-weight: bold;"></p>
+                        <a href="PerfilDeUsuario.html" class="go-to-profile">Ir al perfil de usuario</a>
+                        <button id="logout-btn">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <div class="productos-grid">
+
+            <div class="productos-grid">
+                <div class="producto item" data-id="ni1" data-title="Nobara Kugisaki - Jujutsu Kaisen" data-description="Figura articulable de Nobara Kugisaki"
+                     data-price="125.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/NI1.jpg" alt="NewI1"/>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                <div class="producto item" data-id="ni1" data-title="Rengoku kyojuro Kimetsu no Yaiba" data-description="Figura de alta calidad en resina"
+                     data-price="185.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/NI2.jpg" alt="NewI2"/>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                <div class="producto item" data-id="ni1" data-title="Funko pop Carnage - Marvel" data-description="Funko pop de carnage edicion especial por estreno"
+                     data-price="50.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/NI3.jpg" alt="NewI3"/>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                <div class="producto item" data-id="ni1" data-title="Bocchi the rock - manga" data-description="Primer tomo manga de bocchi the rock"
+                     data-price="25.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/NI4.jpg" alt="NewI4"/>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                <div class="producto item" data-id="ni1" data-title="Hatsune miku figura kawaii" data-description="Figura de hatsune miku color pastel"
+                     data-price="70.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/N15.jpg" alt="NewI5"/>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                <div class="producto item" data-id="ni1" data-title="Batman articulado - DC" data-description="Figura de batman articulada (no incluye accesorios)"
+                     data-price="55.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/NI6.jpg" alt="NewI6"/>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                <div class="producto item" data-id="ni1" data-title="Estatua de pacman" data-description="Estatua de pacman de edicion limitada"
+                     data-price="40.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/NI7.jpg" alt="NewI7"/>
+                    </div>                 
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                <div class="producto item" data-id="ni1" data-title="Taza de Death in the family - Batman" data-description="Taza conmemorativa de joker"
+                     data-price="15.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/NI8.jpg" alt="NewI8"/>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                <div class="producto item" data-id="ni1" data-title="Kafka chibi - Honkai Star Rail" data-description="Figura chibi de Kafka de 1er aniversario"
+                     data-price="60.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/NI9.jpg" alt="NewI9"/>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+
+                <div class="producto item" data-id="ni1" data-title="Figura Hatsune Miku cherryblossom" data-description="Figura para escritorio de hatsune miku de Sega"
+                     data-price="46.00">
+                    <div class="imagen-container">
+                        <img src="IMGni/NI10.jpg" alt="NewI10"/>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div id="product-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>              
+                    <img id="modal-image" src="" alt="Imagen del producto" class="modal-image">
+                    <div class="modal-content-text">
+                        <h2 id="modal-title">Título del producto</h2>
+                        <p id="modal-description">Descripción del producto</p>
+                        <p id="modal-price">Precio</p>
+                        <button id="modal-add-to-cart" class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <script src="NuevosIngresos.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <title>Products Detail</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Details.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo"><img src="IMG/Lgo pag web3.png" alt="logo" width="120"/>
+            </div>               
+            <div class="menu">
+                <a href="PrimeraVista.html" class="nav-button">Inicio</a>
+                <a href="Productos.html" class="nav-button">Productos</a>
+                <a href="Carrito.html" class="nav-button">Carrito</a>
+                <div class="user-icon-container">
+                    <img src="IMG/cuenta.png" alt="Usuario" id="user-icon"
+                         style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
+                    <div id="user-modal" class="user-modal">
+                        <p id="user-id-text" style="margin: 0 0 8px 0; font-weight: bold;"></p>
+                        <a href="PerfilDeUsuario.html" class="go-to-profile">Ir al perfil de usuario</a>
+                        <button id="logout-btn">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+         <div class="detalle-recuadro">
+        <div class="detalle-producto">
+            <img id="detalle-imagen" alt="Imagen del producto">
+            <div class="detalle-info">
+                <h1 id="detalle-titulo"></h1>
+                <p id="detalle-descripcion"></p>
+                <p id="detalle-precio"></p>
+                <button id="add-to-cart">Añadir al carrito</button>
+            </div>
+        </div>
+             <br>
+             <div>
+                <h2>También te podría gustar:</h2> 
+             </div>       
+        <div id="sugerencias-container" class="bloque-productos"></div>
+    </div>
+
+    <div id="notification" class="notification" style="display:none;"></div>
+
+        <script src="Details.js"></script>
+    </body>
+</html>

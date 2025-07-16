@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arcade</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Arcade.html.css">
+    </head>
+    <body>
+        <div id="notification" class="notification" style="display:none;">
+            <span>Se ha agregado al carrito</span>
+            <button id="go-to-cart">Ir al carrito</button>
+        </div>
+        <div class="navbar">
+            <div class="logo"><img src="IMG/Lgo pag web3.png" alt="logo" width="120"/></div>
+            <div class="menu">
+                <a href="PrimeraVista.html" class="nav-button">Inicio</a>
+                <a href="Productos.html" class="nav-button">Productos</a>
+                <a href="Carrito.html" class="nav-button">Carrito</a>
+                <div class="user-icon-container">
+                    <img src="IMG/cuenta.png" alt="Usuario" id="user-icon"
+                         style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
+                    <div id="user-modal" class="user-modal">
+                        <p id="user-id-text" style="margin: 0 0 8px 0; font-weight: bold;"></p>
+                        <a href="PerfilDeUsuario.html" class="go-to-profile">Ir al perfil de usuario</a>
+                        <button id="logout-btn">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-block">
+            <h2>Moba</h2>
+            <div class="carousel">
+                <div class="carousel-track">              
+                    <div class="item" data-title="Guante de Vi" data-description="Guante de Vi - Arcane (League of leyends)" data-id="moba1" data-price="$125">
+                        <img src="productosEG/arcade/moba1.jpg" alt="moba1">
+
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Llavero de Pudge - 2 colores" data-description="Llavero de Pudge - Dota2" data-id="moba2" data-price="$125">
+                        <img src="productosEG/arcade/moba2.jpg" alt="moba2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Collar de Arcane" data-description="Collar de arcane - Arcane (League of leyends)" data-id="moba3" data-price="$125">
+                        <img src="productosEG/arcade/moba3.jpg" alt="moba3">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Almohada de Arcane" data-description="Almohada de Arcane - Arcane (League of leyends)" data-id="moba4" data-price="$125">
+                        <img src="productosEG/arcade/moba4.jpg" alt="moba4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Figura de Tiny" data-description="Figura de Tiny - Dota2" data-id="moba5" data-price="$125">
+                        <img src="productosEG/arcade/moba5.jpg" alt="moba5">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>              
+                    <div class="item" data-title="Figura de Kunkka, Pudge, Tidehunter, Queen of pain, Lina, Crystal maiden, Faceless Void" 
+                         data-description="Coleccion de figuras de Heroes - Dota2"  data-id="moba6" data-price="$125">
+                        <img src="productosEG/arcade/moba6.jpg" alt="moba6">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Teclas de League of leyends" data-description="Teclas mecanicas para teclado - League of leyends" 
+                         data-id="moba7" data-price="$125">
+                        <img src="productosEG/arcade/moba7.jpg" alt="moba7">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Phone case logo Dota2" data-description="Phone case con logo de Dota2 - Dota 2" data-id="moba8" data-price="$125">
+                        <img src="productosEG/arcade/moba8.jpg" alt="moba8">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Figura de BloodSeeker" data-description="Figura de BloodSeeker - Dota2" data-id="moba9" data-price="$125">
+                        <img src="productosEG/arcade/moba9.jpg" alt="moba9">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Llavero Arcane" data-description="Llavero Arcane - Arcane (League of leyends)" data-id="moba10" data-price="$125">
+                        <img src="productosEG/arcade/moba10.jpg" alt="moba10">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Rol</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="item" data-title="Battleship" data-description="Juego de rol completo" data-id="rol1" data-price="$55">
+
+                        <img src="productosEG/arcade/ROL1.jpg" alt="rol1">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="figura de caballero" data-description="Figura de colección armable y articulable" data-id="rol2" data-price="$125">
+                        <img src="productosEG/arcade/ROL2.jpg" alt="rol2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Dado de 12 caras" data-description="Pieza individual de juego de rol" data-id="rol3" data-price="$45">
+                        <img src="productosEG/arcade/rol3.jpg" alt="rol3">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Tierra globo terraqueo" data-description="Escultura de tierra para escritorio" data-id="rol4" data-price="$125">
+                        <img src="productosEG/arcade/ROL4.jpg" alt="rol4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Laberinto de goblins" data-description="Juego de rol completo" data-id="rol5" data-price="$125">
+                        <img src="productosEG/arcade/rol5.jpg" alt="rol5">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Aventura</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="item" data-title="Taza de tuberia de Mario Bros" data-description="Taza de ceramico de Mario Bros" data-id="aven1" data-price="$125">
+                        <img src="productosEG/arcade/aven1.jpg" alt="aven1">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Stand para controlador de Hollow knight" data-description="Stand para controlador de Hollow Knight" data-id="aven2" data-price="$125">
+                        <img src="productosEG/arcade/aven2.jpg" alt="aven2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Carcasa de audifonos bluetooth" data-description="Carcasa de Genshin Impact para audifonos bluetooth" data-id="aven3" data-price="$125">
+                        <img src="productosEG/arcade/aven3.jpg" alt="aven3">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Conjunto de Mochila/Morral/Cartuchera de Kirby" data-description="Conjunto de mochilas con diseño de Kirby" data-id="aven4" data-price="$125">
+                        <img src="productosEG/arcade/aven4.jpg" alt="aven4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>               
+                </div>
+            </div>
+
+            <h2>Accion</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="item" data-title="Llavero de espada de Mavuika" data-description="Espada de Mavuika - Genshin Impact" data-id="acc1" data-price="$125">
+                        <img src="productosEG/arcade/acc1.jpg" alt="acc1">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Link de Zelda" data-description="Figura articulable de Link - Leyend of Zelda" data-id="acc2" data-price="$125">
+                        <img src="productosEG/arcade/acc2.jpg" alt="acc2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Figuras de Hollow Knight" data-description="Figuras de Hollow Knight" data-id="acc3" data-price="$125">
+                        <img src="productosEG/arcade/acc3.jpg" alt="acc3">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Gorro de Kirby" data-description="Gorro de jean con parche de kirby" data-id="acc4" data-price="$125">
+                        <img src="productosEG/arcade/acc4.jpg" alt="acc4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>                   
+                </div>
+            </div>
+
+            <h2>RPG</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="item" data-title="Figura de OnePiece" data-description="Figura de OnePiece articulable" data-id="rpg1" data-price="$125">
+                        <img src="productosEG/arcade/rpg1.jpg" alt="rpg1">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Dungeons and lasers" data-description="Juego rpg completo" data-id="rpg2" data-price="$125">
+                        <img src="productosEG/arcade/rpg2.jpg" alt="rpg2">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Pin de Hollow Knight" data-description="Pin metalico de Hollow Knight" data-id="rpg3" data-price="$125">
+                        <img src="productosEG/arcade/rpg3.jpg" alt="rpg3">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Paquete de productos de Honkai Star Rail" data-description="Paquete de aniversario - edicion Herta" data-id="rpg4" data-price="$125">
+                        <img src="productosEG/arcade/rpg4.jpg" alt="rpg4">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                    <div class="item" data-title="Paquete de cartas de Honkai Star Rail" data-description="Paquete de segundo aniversario - edicion FuXuan" data-id="rpg5" data-price="$125">
+                        <img src="productosEG/arcade/rpg5.jpg" alt="rpg5">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>              
+                <img id="modal-image" src="" alt="Imagen del producto" class="modal-image">
+                <div class="modal-content-text">
+                    <h2 id="modal-title">Título del producto</h2>
+                    <p id="modal-description">Descripción del producto</p>
+                    <p id="modal-price">Precio</p>
+                    <button id="modal-add-to-cart" class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div id="notification" class="notification" style="display: none;">
+                <p>Producto añadido al carrito</p>
+                <button id="go-to-cart">Ir al carrito</button>
+            </div>
+        </div>
+
+        <script src="Arcade.js"></script>
+
+    </body>
+</html>

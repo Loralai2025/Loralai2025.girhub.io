@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+
+        <title>Resultado de Busqueda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ResultadoBusqueda.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo"><img src="IMG/Lgo pag web3.png" alt="logo" width="120"/>
+            </div>               
+            <div class="menu">
+                <a href="PrimeraVista.html" class="nav-button">Inicio</a>
+                <a href="Productos.html" class="nav-button">Productos</a>
+                <a href="Carrito.html" class="nav-button">Carrito</a>
+                <div class="user-icon-container">
+                    <img src="IMG/cuenta.png" alt="Usuario" id="user-icon"
+                         style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
+                    <div id="user-modal" class="user-modal">
+                        <p id="user-id-text" style="margin: 0 0 8px 0; font-weight: bold;"></p>
+                        <a href="PerfilDeUsuario.html" class="go-to-profile">Ir al perfil de usuario</a>
+                        <button id="logout-btn">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div id="resultadosBusqueda">
+            <!-- Sección 1: Resultados encontrados -->
+            <div class="resultado-seccion" id="resultadosProductos">
+                <h2>Resultados en productos</h2>
+                <div class="lista-productos" id="contenedorResultados">
+                    <!-- Productos encontrados por búsqueda se insertan dinámicamente aquí -->
+                </div>
+            </div>          
+        </div> 
+        <!-- Texto en caso de que no haya resultados -->
+        <p id="sinResultados" style="text-align:center; margin-top:20px; display:none;">No hay resultados</p>
+        <div id="notification" class="notification" style="display:none">
+            <p>Producto añadido al carrito</p>
+            <button id="go-to-cart">Ir al carrito</button>
+        </div>
+        <script src="ResultadoBusqueda.js"></script> 
+        <script src="eventoBusqueda.js"></script>
+        <script src="ResultadoDetailed.js"></script>
+    </body>
+</html>

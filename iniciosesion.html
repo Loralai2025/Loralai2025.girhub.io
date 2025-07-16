@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inicio Arcade</title>
+        <link rel="stylesheet" href="iniciosesion.css" />
+        <link rel="stylesheet" href="InicioStyle.html.css" type="text/css">
+
+    </head>
+    <body>
+        <video autoplay muted loop id="background-video">
+            <source src="IMG/retro.mp4" type="video/mp4">
+        </video>
+        <div class="login-container">
+            <h1 class="titulo anim-title">CREA TU CUENTA</h1>
+
+            <div id="create-section">
+                <input type="email" id="new-email" placeholder="Correo electrónico" required />
+                <input type="text" id="new-id" placeholder="ID de usuario" required />
+                <input type="password" id="new-password" placeholder="Contraseña" required />
+                <button class="btn-neon" onclick="crearCuenta()">CREAR CUENTA</button>
+                <p style="margin-top: 10px; color: white;">¿Ya tienes cuenta?</p>
+                <button onclick="mostrarLogin()" class="btn-neon">INICIAR SESIÓN</button>
+            </div>
+
+            <div id="juego-section" style="display:none;">
+                <h2 class="anim-sub">¡RECOGE TODAS LAS MONEDAS!</h2>
+                <canvas id="juegoCanvas" width="500" height="200"></canvas>
+                <p id="puntos">Monedas: 0/3</p>
+                <button id="continuar-btn" style="display:none;" onclick="mostrarLogin()">CONTINUAR</button>
+            </div>
+
+            <div id="login-section" style="display: none;">
+                <input type="text" id="login-id" placeholder="ID de usuario" required />
+                <input type="password" id="login-password" placeholder="Contraseña" required />
+                <button class="btn-neon" onclick="iniciarSesion()">INICIAR SESIÓN</button>
+            </div>
+            <p id="mensaje"></p>
+        </div>
+
+        <script src="iniciosesion.js"></script>
+    </body>
+</html>

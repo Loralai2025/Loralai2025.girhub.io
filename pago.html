@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Pagos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Payment.html.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo"><img src="IMG/Lgo pag web3.png" alt="logo" width="120"/>
+            </div>               
+            <div class="menu">
+                <a href="PrimeraVista.html" class="nav-button">Inicio</a>
+                <a href="Productos.html" class="nav-button">Productos</a>
+                <a href="Carrito.html" class="nav-button">Carrito</a>
+                <div class="user-icon-container">
+                    <img src="IMG/cuenta.png" alt="Usuario" id="user-icon"
+                         style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
+                    <div id="user-modal" class="user-modal">
+                        <p id="user-id-text" style="margin: 0 0 8px 0; font-weight: bold;"></p>
+                        <a href="PerfilDeUsuario.html" class="go-to-profile">Ir al perfil de usuario</a>
+                        <button id="logout-btn">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="pago-wrapper">
+            <div class="pago-container">
+                <h1>Formulario de Pago</h1>
+                <form>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" required placeholder="Escribe tu nombre completo">
+
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" required>
+                    <br> 
+                    <div>
+                        <label for="region">Región</label>
+                        <select id="region" required>
+                            <option value="">Selecciona una región</option>
+                            <option value="lima">Lima</option>
+                            <option value="arequipa">Arequipa</option>
+                            <option value="cusco">Cusco</option>
+                            <option value="ancash">Áncash</option>
+                            <option value="piura">Piura</option>
+                            <option value="junin">Junín</option>
+                            <option value="ica">Ica</option>
+                        </select>
+                    </div>
+
+                    <div class="doble-campo">
+                        <div>
+                            <label for="postal">Código Postal</label>
+                            <input type="text" id="postal" required>
+                        </div>
+                        <div>
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" required>
+                        </div>
+                    </div>
+
+                    <label for="pago">Método de pago</label>
+                    <select id="pago" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="tarjeta">Tarjeta de crédito</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                    </select>
+
+                    <label for="tarjeta">Número de tarjeta</label>
+                    <input type="text" id="tarjeta" required>
+
+                    <div class="triple-campo">
+                        <div>
+                            <label for="mes">Mes</label>
+                            <input type="text" id="mes" placeholder="MM" required>
+                        </div>
+                        <div>
+                            <label for="anio">Año</label>
+                            <input type="text" id="anio" placeholder="YY" required>
+                        </div>
+                        <div>
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" required>
+                        </div>
+                    </div>
+
+                    <button type="submit">Confirmar Pago</button>
+                </form>
+            </div>
+            <script src="pago.js"></script>
+    </body>
+</html>

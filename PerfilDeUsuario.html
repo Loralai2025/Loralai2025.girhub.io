@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Perfil del usuario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="PerdilDeUsuario.css"> 
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo"><img src="IMG/Lgo pag web3.png" alt="logo" width="120"/>
+            </div>               
+            <div class="menu">
+                <a href="PrimeraVista.html" class="nav-button">Inicio</a>
+                <a href="Productos.html" class="nav-button">Productos</a>
+                <a href="Carrito.html" class="nav-button">Carrito</a>
+                <div class="user-icon-container">
+                    <img src="IMG/cuenta.png" alt="Usuario" id="user-icon"
+                         style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
+                    <div id="user-modal" class="user-modal">
+                        <p id="user-id-text" style="margin: 0 0 8px 0; font-weight: bold;"></p>
+                        <a href="PerfilDeUsuario.html" class="go-to-profile">Ir al perfil de usuario</a>
+                        <button id="logout-btn">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <div class="perfil-container">
+            <div class="perfil-lateral">
+                <div class="user-photo">
+                    <img src="IMG/cuenta.png" alt="usuario">
+                </div>
+                <div class="usuario-id">
+                    <p><strong>ID de usuario:</strong> <span id="idUsuario">cargando...</span></p>
+                    <p><strong>Correo:</strong> <span id="correoUsuario">cargando...</span></p>
+                </div>
+            </div>
+
+            <div class="perfil-contenido">
+                <div class="recuadro-carrito">
+                    <div class="contenido-recuadro">
+                        <div class="productos-carrito" id="contenedorCarrito"></div>
+                        <div class="botones">
+                            <button id="rastrearBtn">Rastrear</button>
+                            <button>Dejar una reseña</button>
+                            <button>Devolución o reembolso</button>
+                        </div>
+                    </div>
+                    <div id="pestañaRastrear" class="pestaña-rastrear">
+                        <!-- Modal para Reseña -->
+                        <div id="modalReseña" class="modal-formulario">
+                            <div class="contenido-modal">
+                                <h3>Dejar una reseña</h3>
+                                <textarea id="textoReseña" placeholder="Escribe tu opinión aquí..."></textarea>
+                                <div class="acciones-formulario">
+                                    <button onclick="enviarReseña()">Enviar</button>
+                                    <button onclick="cerrarModal('modalReseña')">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal para Devolución o Reembolso -->
+                        <div id="modalDevolucion" class="modal-formulario">
+                            <div class="contenido-modal">
+                                <h3>Solicitud de devolución/reembolso</h3>
+                                <textarea id="textoDevolucion" placeholder="Explica el motivo..."></textarea>
+                                <div class="acciones-formulario">
+                                    <button onclick="enviarDevolucion()">Enviar</button>
+                                    <button onclick="cerrarModal('modalDevolucion')">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rastreo-info">
+                            <h3>Detalles de envío</h3>
+                            <p><strong>Estado:</strong> ENTREGADO el 6 marzo 2025, 9:15am</p>
+                            <ul>
+                                <li>🟢 ENTREGADO - 20 junio 2025, 9:15am</li>
+                                <li>🚚 INICIO DE RUTA - 21 junio 2025, 10:20pm</li>
+                                <li>📦 PAQUETE EN TRANSITO - 27 junio 2025</li>
+                                <li>🏢 RECEPCIONADO EN HUB - 13 julioo 2025</li>
+                                <li>🛃 EN ADUANA - 13 de julio 2025</li>
+                                <li>📮 EN TRANSITO  14 de julio 2025 </li>
+                                <li> 🛻ENVÍO EN TRÁNSITO HACIA LA ADMINISTRACION - NO DISPONIBLE PARA ENTREGA - 14 Julio 2025</li>
+                                <li> 🏤 LLEGADA A OFICINA ENTREGA - 16 julio 2025 </li>
+                                <li> 📬 ENVÍO ENTREGADO 18 julio 2025</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="PerfilDeUsuario.js"></script>
+    </body>
+</html>

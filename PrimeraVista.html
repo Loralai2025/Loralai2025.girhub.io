@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>L-Ink</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="InicioStyle.html.css"> 
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="IMG/Lgo pag web3.png" alt="logo" width="120"/>
+            </div> 
+
+            <button class="hamburguesa" id="hamburguesaBtn">
+                ☰
+            </button>
+
+            <div class="menu" id="menuLinks"> <!-- Aquí está el cambio -->
+
+                <a href="PrimeraVista.html" class="nav-button">Inicio</a>
+                <a href="Productos.html" class="nav-button">Productos</a>
+                <a href="Carrito.html" class="nav-button">Carrito</a>
+
+                <div class="user-icon-container">
+                    <img src="IMG/cuenta.png" alt="Usuario" id="user-icon"
+                         style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
+                    <div id="user-modal" class="user-modal">
+                        <p id="user-id-text" style="margin: 0 0 8px 0; font-weight: bold;"></p>
+                        <a href="PerfilDeUsuario.html" class="go-to-profile">Ir al perfil de usuario</a>
+                        <button id="logout-btn">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar categorías..." >
+            <ul id="resultsList"></ul>
+        </div>
+        <div class="banner">
+            <div>
+                <h2>Nuevos Ingresos</h2>
+                <button onclick="window.location.href = 'NuevosIngresos.html'">Ver productos</button>
+            </div>
+        </div>
+        <div class="image-grid">
+            <a href="Manga.html" class="image-box mangas"><span>Mangas</span></a>
+            <a href="Comics.html" class="image-box comics"><span>Comics</span></a>
+            <a href="Figuras.html" class="image-box figuras"><span>Figuras</span></a>
+            <a href="Arcade.html" class="image-box arcade"><span>Arcade</span></a>
+        </div>
+        <div class="promo-grid">          
+            <div class="promo-box text-box">
+                <p><strong>¡Tu primer pedido tiene 20% de descuento!</strong></p>
+            </div>      
+            <a href="Carrito.html" class="promo-box image-link" id="cart-image"></a>           
+            <a href="pago.html" class="promo-box image-link" id="envio-image"></a>
+            <div class="promo-box text-box">
+                <p><strong>¡Realizamos envíos a todo el Perú!</strong></p>
+            </div>
+        </div>
+        <script src="PrimeraVista.js"></script>
+    </body>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social">
+                <p><strong>Síguenos en:</strong></p>
+                <a href="https://wa.me/920240767" target="_blank">
+                    <img src="IMG/wa.png" alt="WhatsApp"/>      
+                </a>
+                <a href="https://www.facebook.com/share/1Bnbapgi3M/" target="_blank">
+                    <img src="IMG/fb.png" alt="Facebook"/>
+                </a>
+                <a href="https://www.instagram.com/linkamangascomics?igsh=djBjMzEwYWRocW1h" target="_blank">
+                    <img src="IMG/ig.png" alt="Instagram"/>
+                </a>
+            </div>
+            <div class="contact">
+                <p><strong>Contacto:</strong></p>
+                <p>920-240-767</p> 
+            </div>
+        </div>
+        <br>
+        <div class="video-flex"> 
+            <div id="item1"><strong>Unboxing de algunos de nuestros productos!</strong></div>
+        </div> 
+        <div class="video-flex">               
+            <video width="320" height="240" controls>
+                <source src="VideoUnboxing/Unboxing1.mp4" type="video/mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="VideoUnboxing/Unboxing2.mp4" type="video/mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="VideoUnboxing/Unboxing3.mp4" type="video/mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="VideoUnboxing/Unboxing4.mp4" type="video/mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="VideoUnboxing/Unboxing5.mp4" type="video/mp4">
+            </video>           
+        </div>    
+        <div>
+            <marquee behavior="scroll" direction="left" class="footer-marquee"><strong>
+                    ¡No te pierdas nuestras últimas promociones! Descuentos exclusivos, nuevos lanzamientos y contenido único cada semana. ¡Síguenos en nuestras redes y entérate de todo primero! 
+                </strong></marquee>            
+        </div>
+        <script src="PrimeraVista.js"></script>
+        <script src="VideoVista.js"></script>
+    </footer>
+</html>
