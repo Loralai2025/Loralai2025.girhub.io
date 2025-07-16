@@ -281,7 +281,7 @@ body {
     position: relative;
     width: 100%;
     height: 350px;
-    background: url('IMG/bannerWEBv2.jpg') no-repeat center center;
+    background: url('bannerWEBv2.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -355,16 +355,16 @@ body {
     z-index: 2;
 }
 .mangas {
-    background-image: url('IMG/animebanner.jpg');
+    background-image: url('animebanner.jpg');
 }
 .comics {
-    background-image: url('IMG/comicbanner.jpg');
+    background-image: url('comicbanner.jpg');
 }
 .figuras {
-    background-image: url('IMG/figurebanner.jpg');
+    background-image: url('figurebanner.jpg');
 }
 .arcade {
-    background-image: url('IMG/arcadebanner.jpg');
+    background-image: url('arcadebanner.jpg');
 }
 .promo-grid {
     display: grid;
@@ -401,10 +401,10 @@ body {
     text-decoration: none;
 }
 #cart-image {
-    background-image: url('IMG/20dsc.jpg');
+    background-image: url('20dsc.jpg');
 }
 #envio-image {
-    background-image: url('IMG/enviosp.jpg');
+    background-image: url('enviosp.jpg');
 }
 .video-flex {
     display: flex;
