@@ -44,23 +44,23 @@ function iniciarSesion() {
         if (loginBtn) {
             loginBtn.removeAttribute('href');
             loginBtn.innerHTML = `
-        <img src="IMG/cuenta.png" alt="Usuario" style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
+        <img src="cuenta.png" alt="Usuario" style="width: 28px; border-radius: 50%; vertical-align: middle; cursor: pointer;">
       `;
         }
         setTimeout(() => {
-            window.location.href = 'PrimeraVista.html';
+            window.location.href = 'index.html';
         }, 1000);
     } else {
         document.getElementById('mensaje').textContent = 'Datos incorrectos.';
     }
 }
 function irAInicio() {
-    window.location.href = 'PrimeraVista.html';
+    window.location.href = 'index.html';
 }
 
 function cerrarSesion() {
     localStorage.removeItem('loggedUser');
-    window.location.href = 'PrimeraVista.html';
+    window.location.href = 'index.html';
 }
 
 function iniciarJuego() {
